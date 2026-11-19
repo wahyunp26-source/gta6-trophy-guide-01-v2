@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida 55 — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#list">Skip to checklist</a>
+<header class="top">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">55</div>
+    <div>
+      <h1>LEONIDA 55</h1>
+      <p class="sub">GTA VI &middot; PS5 trophy guide &amp; tracker &middot; unofficial fan guide, not affiliated with Rockstar Games or Sony</p>
+    </div>
+  </div>
+  <div class="headstats">
+    <div class="bignum"><span id="earnedCount">0</span><small>/ 55 earned</small></div>
+    <div class="bar" role="progressbar" aria-label="Trophies earned"><div id="barFill"></div></div>
+    <div class="grades" id="gradeStats"></div>
+    <div class="headbtns">
+      <button id="spoilerBtn" type="button" aria-pressed="true">Spoilers: hidden until earned</button>
+      <button id="exportBtn" type="button">Export</button>
+      <label class="importbtn">Import<input id="importFile" type="file" accept="application/json"></label>
+    </div>
+    <p class="saved" id="savedNote">Saved in this browser</p>
+  </div>
+</header>
+<div class="audit" id="audit" role="status"></div>
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-tab="checklist" class="on">Checklist</button>
+  <button type="button" data-tab="roadmap">Platinum roadmap</button>
+  <button type="button" data-tab="missables">Missables <span class="badge" id="missBadge">1</span></button>
+  <button type="button" data-tab="nextup">Next up</button>
+  <button type="button" data-tab="about">About &amp; sources</button>
+</nav>
+<div class="stages" id="stageChips" aria-label="Progress by stage"></div>
+
+<section id="view-checklist" class="view on">
+  <div class="toolbar">
+    <label class="search">Search trophies <span class="key">/</span><input id="search" type="search" placeholder="Search trophies, missions, places…" autocomplete="off"></label>
+    <label>Grade <select id="gradeFilter"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+    <label class="chk"><input id="earnedOnly" type="checkbox"> Earned only</label>
+    <label class="chk"><input id="todoOnly" type="checkbox"> To do</label>
+    <button id="sampleBtn" type="button">Load sample progress</button>
+    <button id="clearSampleBtn" type="button" hidden>Clear sample</button>
+    <button id="resetBtn" type="button">Reset</button>
+  </div>
+  <div class="kinds" id="kindChips" aria-label="Filter by kind"></div>
+  <div class="warn" id="missBanner"></div>
+  <div class="cols">
+    <div class="list" id="list" tabindex="-1"></div>
+    <aside class="detail" id="detail" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section id="view-roadmap" class="view">
+  <h2>Road to the Platinum — all 55 trophies</h2>
+  <p class="lede">Seven stages, in the order to earn them. Difficulty 4/10, about 200 hours, one playthrough is enough. No online trophies, no difficulty trophies, and cheats disable trophies.</p>
+  <div id="roadmap"></div>
+</section>
+
+<section id="view-missables" class="view">
+  <h2>Missables — the one trophy to protect</h2>
+  <div class="warn big" id="missBanner2"></div>
+  <div id="missList"></div>
+  <p class="note">Every other trophy can be earned after the story ends. There is no mission replay, so keep a manual save from the start of each chapter.</p>
+</section>
+
+<section id="view-nextup" class="view">
+  <h2>Next up — what to earn next</h2>
+  <p class="lede">Ordered by roadmap stage, with the possibly missable trophy first while it is still open.</p>
+  <div id="nextList"></div>
+</section>
+
+<section id="view-about" class="view">
+  <h2>About &amp; sources</h2>
+  <div class="about">
+    <h3>How this guide was made</h3>
+    <p>Every guide here is written in our own words for this entry, from the official trophy names, descriptions and grades as PlayStation publishes them (via Exophase and PSNProfiles, which agree on all 55). Each guide cites its sources beside it, with the date each source was read, so a reader sees where each fact comes from. A specific location or step with no source earns no trust — and this guide does not invent one.</p>
+    <p>Trophies whose trigger no guide has pinned down yet are marked <strong>not confirmed yet — best lead, not a sure method</strong>, instead of presenting a guess as fact. The game launched 19 November 2026, so early guides are still being corrected; this list was checked on 19 November 2026.</p>
+    <h3>Sources</h3>
+    <ol id="sourceList" class="sources"></ol>
+    <h3>Key facts</h3>
+    <ul>
+      <li>55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze. 28 hidden on PlayStation until earned.</li>
+      <li>All offline, all single-player. No online trophies, no difficulty trophies. Cheats disable trophies and saving.</li>
+      <li>1 possibly missable trophy (Positive Mental Attitude). 6 trophies with unconfirmed triggers, listed honestly.</li>
+      <li>Works offline: every file it loads lives in this folder, and it makes no network requests.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games, Take-Two, or Sony. Trophy names, descriptions and grades as PlayStation publishes them; guides written in our own words. No online trophies, no difficulty trophies — cheats disable trophies.</p>
+  <p>Sources retrieved 19 Nov 2026: Exophase, PowerPyx, KeenGamer, Push Square, PSNProfiles, GTABase.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
